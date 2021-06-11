@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="#" />
+    <title>Equipo Electronico</title>
+</head>
+<body>
+
+     <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <h3 class="navbar-brand text-primary" href="#">CompraCompu</h3>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav mr-auto">
+         
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nosotros</a>
+              </li>
+        
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <ul class="navbar-nav ml-auto">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Compras</button>
+        </ul>
+          </form>
+        </div>
+      </nav>
+
+ 
+
+
+    <div class="container">
+        
+        <div id="App" class="row pt-5  ">
+
+          
+            <div class="col-md-4 backg">
+
+            <h2>Equipo Electrónico</h2>
+            
+            <p class="lead">Añade el producto en las cajas de texto</p>
+                <div class="card">
+                  
+                        
+                    
+                    <form id="product-form" class="card-body">
+                        <div class="form-group">
+                            <p class="lead fontp">Ingresa el nombre del equipo</p>
+                            <input type="text" id="name" placeholder="Equipo" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <p class="lead fontp">Ingresael precio</p>
+                            <input type="number" id="price" step="0.01" placeholder="Precio"
+                                class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <p class="lead fontp">Ingresa el año</p>
+                            <input type="number" id="year" min="1900" max="2099" step="1" value="2018"
+                                class="form-control ">
+                        </div>
+                        <input type="submit" value="Guardar" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+            </div>
+         
+            <div  class="col-md-8">
+               
+                <div class="container">
+        
+   
+        
+                    <div  class="row pt-5">
+            
+            
+                    <div  class="col-md-3">
+                    <strong> Nombre de Producto </strong>
+                   </div>
+                    <div  class="col-md-2">
+                        <strong> Precio (Pesos) </strong>
+                        </div>
+                        <div  class="col-md-2">
+                        <strong> Año </strong>
+                        </div>
+                        <div  class="col-md-2">
+                            <strong>Compra</strong>
+                       
+                       </div>
+                        <div  class="col-md-3">
+                            <strong>Eliminar registro</strong>
+                       
+                       </div>
+                       </div>
+                       
+                    </div>
+                    <br>
+            <div id="product-list" ></div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="js/scripts.js" ></script>
+</body>
+</html>
